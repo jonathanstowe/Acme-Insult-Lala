@@ -5,48 +5,54 @@ use v6.c;
 
 =begin pod
 
-=head1 NAME
+=head1 NAME 
 
-Acme::Scurvy::Whoreson::BilgeRat::Backend::lala - generate insults in the style of one of London.pm's bots
+Acme::Insult::Lala - Construct an insulting epithet in the manner of an old IRC bot
 
 =head1 SYNOPSIS
 
-    use Acme::Scurvy::Whoreson::BilgeRat;
+=begin code
 
-    my $insultgenerator = Acme::Scurvy::Whoreson::BilgeRat->new(
-        language => 'lala'
-    );
+use Acme::Insult::Lala;
 
-    print $insultgenerator; # prints a piratical insult
+my $lala = Acme::Insult::Lala;
 
+say $lala.generate-insult;
+
+=end code
 
 =head1 DESCRIPTION
 
-The IRC channel #london.pm on the rhizomatic network used to have a bot, 
-called Lala, that would insult you in her own inimitable style.
+This makes an insulting epithet in the manner of 'lala' an IRC bot
+that used to be on the london.pm channel back in the mists of time.
 
-This is a backed for C<Acme::Scurvy::Whoreson::BilgeRat> that reproduces that style.
+I think I originally got the source data from an analysis of epithets
+in Shakespeare plays or something, but I can't actually remember
+it was that long ago. Anyhow at some point the lovely Simon Wistow
+retrieved the basic code and data and incorporated it in the Perl 5 module
+L<Acme::Scurvy::Whoreson::BilgeRat::Backend::insultserver|http://search.cpan.org/~simonw/Acme-Scurvy-Whoreson-BilgeRat-Backend-insultserver-1.0/>.
+From whence I retrieved the data and made it into a Perl 6 module.
 
-It's useless to anyone but this one particular project I'm working on. 
-But since when has that stopped me?
+I suppose you could use it for generating test data or something
+but there's nothing more to it than you see in the Synopsis.
 
-=head1 AUTHOR
+=head1 METHODS
 
-Simon Wistow <simon@thegestalt.org>
+=head2 method new
 
-based on code by
+    method new()
 
-Jonathan Stowe <jns@gellyfish.com>
+The constructor creates the word lists up front so if you are planning
+on using this repeatedly it is best to create a single object and re-use
+it.
 
-=head1 COPYRIGHT
+=head2 method generate-insult
 
-Copyright 2005, Simon Wistow
+    method generate-insult() returns Str
 
-Distributed under the same terms as Perl itself.
-
-=head1 SEE ALSO
-
-http://london.pm.org
+This generates a new random insult based on the internal word lists, as
+noted above if you are planning to call this repeatedly it is probably
+better to re-use a single object if you can. 
 
 =end pod
 
@@ -64,7 +70,7 @@ class Acme::Insult::Lala {
         @!noun          = %h<c>.list;
     }
 
-    method generate-insult() returns Str {
+    method generate-insult(Acme::Insult::Lala:D:) returns Str {
         (@!adjective-one.pick, @!adjective-two.pick, @!noun.pick).join(' ');
     }
 
