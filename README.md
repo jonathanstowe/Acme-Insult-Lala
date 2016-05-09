@@ -8,7 +8,7 @@ Construct an insulting epithet in the manner of an old IRC bot
 
 use Acme::Insult::Lala;
 
-my $lala = Acme::Insult::Lala;
+my $lala = Acme::Insult::Lala.new;
 
 say $lala.generate-insult;
 
