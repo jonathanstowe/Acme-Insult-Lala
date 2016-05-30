@@ -55,7 +55,7 @@ I guess the data in resources/lala.txt should properly be
 considered to be in the public domain as it's likely that it
 came from some such source in the first place.  All the
 rest of the code is free software and licensed under the terms
-described in the [LICENSE](LICENSE) file.
+described in the [LICENCE](LICENCE) file.
 
 © Jonathan Stowe 2016
 
