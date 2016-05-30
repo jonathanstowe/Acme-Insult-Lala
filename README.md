@@ -49,7 +49,7 @@ it's insulting enough, write your own.
 In the unlikely event you should find a bug please report it at
 https://github.com/jonathanstowe/Acme-Insult-Lala/issues
 
-## License and Copyright
+## Licence and Copyright
 
 I guess the data in resources/lala.txt should properly be
 considered to be in the public domain as it's likely that it
