@@ -1,5 +1,5 @@
 
-use v6.c;
+use v6;
 
 
 
@@ -63,7 +63,7 @@ class Acme::Insult::Lala {
     has @!adjective-one;
     has @!adjective-two;
 
-    submethod BUILD() {
+    submethod TWEAK() {
         my %h = %?RESOURCES<lala.txt>.lines>>.split(/\s+/).map( -> [$a, $b, $c] { a => $a, b => $b, c => $c }).flat.classify(*.key, as => *.value);
         @!adjective-one = %h<a>.list;
         @!adjective-two = %h<b>.list;
@@ -73,7 +73,6 @@ class Acme::Insult::Lala {
     method generate-insult(Acme::Insult::Lala:D:) returns Str {
         (@!adjective-one.pick, @!adjective-two.pick, @!noun.pick).join(' ');
     }
-
 }
 
 # vim: expandtab shiftwidth=4 ft=perl6
