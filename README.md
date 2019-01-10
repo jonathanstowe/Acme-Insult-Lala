@@ -55,5 +55,5 @@ came from some such source in the first place.  All the
 rest of the code is free software and licensed under the terms
 described in the [LICENCE](LICENCE) file.
 
-© Jonathan Stowe 2016, 2017
+© Jonathan Stowe 2016, 2017, 2018, 2019
 
