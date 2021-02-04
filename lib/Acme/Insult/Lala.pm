@@ -1,11 +1,8 @@
-
 use v6;
-
-
 
 =begin pod
 
-=head1 NAME 
+=head1 NAME
 
 Acme::Insult::Lala - Construct an insulting epithet in the manner of an old IRC bot
 
@@ -31,7 +28,7 @@ in Shakespeare plays or something, but I can't actually remember
 it was that long ago. Anyhow at some point the lovely Simon Wistow
 retrieved the basic code and data and incorporated it in the Perl 5 module
 L<Acme::Scurvy::Whoreson::BilgeRat::Backend::insultserver|http://search.cpan.org/~simonw/Acme-Scurvy-Whoreson-BilgeRat-Backend-insultserver-1.0/>.
-From whence I retrieved the data and made it into a Perl 6 module.
+From whence I retrieved the data and made it into a Raku module.
 
 I suppose you could use it for generating test data or something
 but there's nothing more to it than you see in the Synopsis.
@@ -52,7 +49,7 @@ it.
 
 This generates a new random insult based on the internal word lists, as
 noted above if you are planning to call this repeatedly it is probably
-better to re-use a single object if you can. 
+better to re-use a single object if you can.
 
 =end pod
 
@@ -75,4 +72,4 @@ class Acme::Insult::Lala {
     }
 }
 
-# vim: expandtab shiftwidth=4 ft=perl6
+# vim: expandtab shiftwidth=4 ft=raku

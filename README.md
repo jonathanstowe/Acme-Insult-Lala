@@ -26,7 +26,7 @@ epithets in Shakespeare plays or something, but I can't actually
 remember it was that long ago. Anyhow at some point the lovely
 Simon Wistow retrieved the basic code and data and incorporated
 it in the Perl 5 module [Acme::Scurvy::Whoreson::BilgeRat::Backend::insultserver](http://search.cpan.org/~simonw/Acme-Scurvy-Whoreson-BilgeRat-Backend-insultserver-1.0/).
-From whence I retrieved the data and made it into a Perl 6
+From whence I retrieved the data and made it into a Raku
 module.
 
 I suppose you could use it for generating test data or something
@@ -34,8 +34,7 @@ but there's nothing more to it than you see in the Synopsis.
 
 ## Installation
 
-Assuming you have a working Rakudo Perl 6 installation you should
-be able to do :
+Assuming you have a working Rakudo installation you should be able to do :
 
     zef install Acme::Insult::Lala
 
@@ -55,5 +54,5 @@ came from some such source in the first place.  All the
 rest of the code is free software and licensed under the terms
 described in the [LICENCE](LICENCE) file.
 
-© Jonathan Stowe 2016, 2017, 2018, 2019
+© Jonathan Stowe 2016 - 2021
 

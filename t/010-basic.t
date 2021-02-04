@@ -1,4 +1,4 @@
-#!perl6
+#!raku
 
 use v6;
 
@@ -18,4 +18,4 @@ for ^10 {
 
 
 done-testing;
-# vim: expandtab shiftwidth=4 ft=perl6
+# vim: expandtab shiftwidth=4 ft=raku
