@@ -16,6 +16,17 @@
       "type": "directory"
     },
     {
+       "name": "bin",
+       "purpose": "scripts",
+       "type": "directory",
+       "children": [
+          {
+             "type": "file",
+             "name": "generate-insult"
+          }
+       ]
+    },
+    {
       "type": "file",
       "name": "README.md"
     },
@@ -40,7 +51,7 @@
               "purpose": null,
               "children": [
                 {
-                  "name": "Lala.pm",
+                  "name": "Lala.rakumod",
                   "type": "file"
                 }
               ],

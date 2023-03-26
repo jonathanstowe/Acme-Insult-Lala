@@ -10,11 +10,11 @@
   "auth": "zef:jonathanstowe",
   "api": "1.0",
   "provides": {
-    "Acme::Insult::Lala": "lib/Acme/Insult/Lala.pm"
+    "Acme::Insult::Lala": "lib/Acme/Insult/Lala.rakumod"
   },
   "description": "Construct an insulting epithet in the manner of an old IRC bot",
   "source-url": "git://github.com/jonathanstowe/Acme-Insult-Lala.git",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "license": "Artistic-2.0",
   "depends": [
   ],

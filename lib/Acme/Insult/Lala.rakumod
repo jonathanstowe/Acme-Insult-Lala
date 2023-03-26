@@ -70,6 +70,13 @@ class Acme::Insult::Lala {
     method generate-insult(Acme::Insult::Lala:D:) returns Str {
         (@!adjective-one.pick, @!adjective-two.pick, @!noun.pick).join(' ');
     }
+
+    sub MAIN(Int :n(:$number) = 1 ) is export(:script) {
+        my $lala = Acme::Insult::Lala.new;
+        for (^$number) -> $ {
+            say $lala.generate-insult;
+        }
+    }
 }
 
 # vim: expandtab shiftwidth=4 ft=raku

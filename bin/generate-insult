@@ -1,0 +1,5 @@
+#!/usr/bin/env raku
+
+use Acme::Insult::Lala :script;
+
+# vim: ft=raku

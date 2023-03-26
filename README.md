@@ -29,6 +29,10 @@ it in the Perl 5 module [Acme::Scurvy::Whoreson::BilgeRat::Backend::insultserver
 From whence I retrieved the data and made it into a Raku
 module.
 
+There's also a handy script that does this for you without having to make any code:
+
+   generate-insult [--number|-n=<number>]
+
 I suppose you could use it for generating test data or something
 but there's nothing more to it than you see in the Synopsis.
 
@@ -54,5 +58,5 @@ came from some such source in the first place.  All the
 rest of the code is free software and licensed under the terms
 described in the [LICENCE](LICENCE) file.
 
-© Jonathan Stowe 2016 - 2021
+© Jonathan Stowe 2016 - 2023
 
